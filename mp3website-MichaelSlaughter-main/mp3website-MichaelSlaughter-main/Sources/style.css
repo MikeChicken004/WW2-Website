@@ -1,0 +1,115 @@
+/* Makes the background white */
+body{
+    background-color: white;
+}
+
+/* The Header which includes the main title of the page (WWII Website (From a U.S. Perspective))*/
+header {
+    background-color: #2A7DED;
+    color: white;
+    text-align: center;
+    height: 150px;
+    font-size: 30px;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    border: 1px solid #2A7DED;
+    margin: 0;
+    
+}
+ 
+/* The Header's h1 which includes the title */
+header h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* main h2 (Sources) */
+h2 {
+    text-align: center;
+    font-size: 35px;
+    text-decoration: underline;
+}
+
+/* Links */
+p {
+    font-size: 35px;
+    color: blue;
+    text-align: center;
+}
+
+/* when hovered, the links turn red */
+p:hover{
+    color: red;
+}
+
+/* when clicked, the font gets slightly bigger for a moment */
+p:active {
+    font-size: 36px;
+}
+
+/* prevents an underline under the links */
+a {
+    text-decoration: none;
+}
+
+
+/*****footer/navigation of the page*******/
+footer {
+    background-color: #2A7DED;
+    height: 100px;
+}
+
+/* the links in the footer */
+footer p{
+    font-size: 40px;
+    color: white;
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+/* to make sure the footers hover doesn't mix with the other paragraphs which hover red */
+footer p:hover {
+    color: white;
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+/* media quiery for screens with a max-width of 1000px */
+@media only screen and (max-width: 1000px) {
+    body, a {
+      font-size: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    footer {
+        height: 60px;
+        
+    }
+
+    footer p {
+        font-size: 20px;
+    }
+  }
+
+  /* media quiery for screens with a max-width of 1200px; */
+  @media only screen and (max-width: 1200px) {
+    header{
+        height: 90px;
+        font-size: 15px;
+    }
+    p {
+        font-size: 25px;
+    }
+  }
+
+  /* Removes images when the screen is too small */
+  @media only screen and (max-width: 600px) {
+    p {
+        font-size: 15px;
+    }
+  }

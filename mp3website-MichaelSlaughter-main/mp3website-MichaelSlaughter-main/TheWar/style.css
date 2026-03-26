@@ -1,0 +1,201 @@
+/* Makes the background white */
+body{
+    background-color: white;
+}
+
+/* The Header which includes the main title of the page (WWII Website (From a U.S. Perspective))*/
+header {
+    background-color: #2A7DED;
+    color: white;
+    text-align: center;
+    height: 150px;
+    font-size: 30px;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    border: 1px solid #2A7DED;
+    margin: 0;
+    
+}
+
+/* The Header's h1 which includes the title */
+header h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Main h2 (The War) */
+.PageTitle h2 {
+    text-align: center;
+    font-size: 35px;
+    text-decoration: underline;
+}
+
+/* For all divs with the class of container, this will make them a flexbox */
+.container {
+    display: flex;
+}
+
+/*Usually the item to the left on the flexbox. **/
+.item-1 {
+    text-align: center;
+    margin: 10px;
+    align-self: center;
+}
+
+/*Usually the item to the right on the flexbox*/
+.item-2 {
+    align-self: center;
+}
+
+/* h2s such as Important Conferences and Financing the war*/
+h2 {
+    text-align: center;
+    font-size: 25px;
+}
+
+/* Sets the images to be 400px wide by 250px long */
+img {
+    width: 400px;
+    height: 250px;
+}
+
+/* h3 with the trivia question */
+h3 {
+    text-align: center;
+}
+
+/* paragraphs */
+p {
+    text-align: center;
+    font-size: 25px;
+}
+
+/***sets the trivia section to a flexbox*****/
+.trivia {
+    display: flex;
+    justify-content: center;
+    
+}
+
+/**Font family of the h2 and h3's in the trivia section *****/
+.trivia h2, h3 {
+    font-family: "Gidole", sans-serif;
+}
+
+/**Buttons a - d in the trivia section*****/
+.trivia button {
+    width: 170px;
+    background-color: transparent;
+    height: 90px;
+    font-size: 22.5px;
+    font-family: "Gidole", sans-serif;
+    align-self: center;
+
+}
+
+/***The buttons when hovered*****/
+.trivia button:hover {
+    cursor: pointer;
+    background-color: lightblue;
+    width: 175px;
+    height: 95px;
+}
+
+/* if the answer is incorrect, the incorrect class will be giving and .incorrect styling applys. */
+.incorrect { 
+    border: 2px solid red; 
+    color: red;
+    }
+/* If the answer is correct, .correct styling will apply */
+.correct { 
+    border: 2px solid green; 
+    color: green
+}
+
+/*****footer/navigation of the page*******/
+footer {
+    background-color: #2A7DED;
+    height: 100px;
+}
+
+/* the links in the footer */
+footer a{
+    font-size: 40px;
+    color: white;
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Container for items in footer to make it a navigation */
+.footerContainer{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Previous Page Link*/
+.footeritem-1 {
+    text-align: center;
+    align-self: center;
+    
+}
+
+/* Next Page Link */
+.footeritem-2 {
+    text-align: center;
+    align-self: center;
+}
+
+/* media quiery for screens with a max-width of 1000px. Makes these items smaller. */
+@media only screen and (max-width: 1000px) {
+    body, h2, h3, p {
+      font-size: 20px;
+    }
+
+    main h1 {
+        font-size: 25px;
+    }
+    img {
+        width: 200px;
+        height: 120px;
+        align-self: center;
+    }
+
+    .trivia button {
+        font-size: 15px;
+        width: 150px;
+        height: 80px;
+    }
+
+    .trivia button:hover {
+        width: 160px;
+        height: 90px;
+    }
+
+    footer {
+        height: 60px;
+        
+    }
+
+    footer a {
+        font-size: 20px;
+    }
+  }
+
+    /* media quiery for screens with a max-width of 1200px. This makes the header smaller */
+  @media only screen and (max-width: 1200px) {
+    header{
+        height: 90px;
+        font-size: 15px;
+    }
+  }
+
+/* Removes images when the screen is too small */
+@media only screen and (max-width: 600px) {
+    img, iframe {
+        display: none;
+    }
+  }

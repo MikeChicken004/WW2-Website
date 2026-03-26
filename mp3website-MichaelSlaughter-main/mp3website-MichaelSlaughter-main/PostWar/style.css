@@ -1,0 +1,210 @@
+/***Inserts a gradient for the background****/
+body{
+    background-image: linear-gradient(135deg, #DB1B1B, white, white, #3A58D6);
+}
+
+/* The Header which includes the main title of the page (WWII Website (From a U.S. Perspective)) Same on every page*/
+header {
+    background-color: #2A7DED;
+    color: white;
+    text-align: center;
+    height: 150px;
+    font-size: 30px;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    border: 1px solid #2A7DED;
+    margin: 0;
+}
+ 
+/* The Header's h1 which includes the title */
+header h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Main h2 (Post War) */
+.PageTitle h2 {
+    text-align: center;
+    font-size: 35px;
+    text-decoration: underline;
+}
+
+/* For all divs with the class of container, this will make them a flexbox */
+.container {
+    display: flex;
+}
+
+/*Usually the item to the left on the flexbox. **/
+.item-1 {
+    text-align: center;
+    margin: 10px;
+    align-self: center;
+}
+
+/***Usually the item to the right on the flexbox****/
+.item-2 {
+    align-self: center;
+}
+
+/***h2s such as Costs of the War or United Nations*****/
+h2 {
+    text-align: center;
+    font-size: 25px;
+}
+
+/***Makes the image 400px wide by 250px long***/
+img {
+    width: 400px;
+    height: 250px;
+}
+
+/***The embeded video which is 500px wide by 300px long****/
+iframe {
+    width: 500px; 
+    height: 300px;
+}
+
+/***The trivia question is in the h3. Moves the text to the center******/
+h3 {
+    text-align: center;
+}
+
+/****paragraphs set to centered text alignment with a font-size of 25px******/
+p {
+    text-align: center;
+    font-size: 25px;
+}
+
+/***sets the trivia section to a flexbox*****/
+.trivia {
+    display: flex;
+    justify-content: center;
+    
+}
+
+/**Font family of the h2 and h3's in the trvia section*****/
+.trivia h2, h3 {
+    font-family: "Gidole", sans-serif;
+}
+
+/**Buttons a - d in the trivia section*****/
+.trivia button {
+    width: 170px;
+    background-color: transparent;
+    height: 90px;
+    font-size: 22.5px;
+    font-family: "Gidole", sans-serif;
+    align-self: center;
+
+}
+
+/***The buttons when hovered*****/
+.trivia button:hover {
+    cursor: pointer;
+    background-color: lightblue;
+    width: 175px;
+    height: 95px;
+}
+
+/* Styling for correct and incorrect borders. If an answer is incorrect, it will be classed by incorrect. Otherwise, it will be classed with correct. Styling applies to each class given. */
+.incorrect { 
+    border: 2px solid red; 
+    color: red;
+    }
+.correct { 
+    border: 2px solid green; 
+    color: green
+}
+
+/*****footer/navigation of the page*******/
+footer {
+    background-color: #2A7DED;
+    height: 100px;
+}
+
+/* the links in the footer */
+footer a{
+    font-size: 40px;
+    color: white;
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Container for items in footer to make it a navigation */
+.footerContainer{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Link to the left (Previous Page) */
+.footeritem-1 {
+    text-align: center;
+    align-self: center;
+    
+}
+
+/* Link to the right (Next Page) */
+.footeritem-2 {
+    text-align: center;
+    align-self: center;
+}
+
+/* media quiery for screens with a max-width of 1000px. Makes these elements smaller.*/
+@media only screen and (max-width: 1000px) {
+    body, h2, h3, p {
+      font-size: 20px;
+    }
+
+    main h1 {
+        font-size: 25px;
+    }
+    img {
+        width: 200px;
+        height: 120px;
+        align-self: center;
+    }
+
+    iframe {
+        width: 300px;
+        height: 175px;
+    }
+
+    .trivia button {
+        font-size: 15px;
+        width: 150px;
+        height: 80px;
+    }
+
+    .trivia button:hover {
+        width: 160px;
+        height: 90px;
+    }
+
+    footer {
+        height: 60px;
+        
+    }
+
+    footer a {
+        font-size: 20px;
+    }
+  }
+
+  /* media quiery for screens with a max-width of 1200px. Makes the header smaller. */
+  @media only screen and (max-width: 1200px) {
+    header{
+        height: 90px;
+        font-size: 15px;
+    }
+  }
+
+  /* Removes images when the screen is too small */
+  @media only screen and (max-width: 600px) {
+    img, iframe {
+        display: none;
+    }
+  }
