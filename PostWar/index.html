@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WWII Website (from a United States Perspective)</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Freeman&family=Gidole&family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--Top header of the webpage (WWII Website (From a U.S. Perspective))-->
+        <header>
+            <h1>WWII Website (From a U.S. Perspective)</h1>
+        </header>
+    <main>
+        <!--Title of the page (Post War)-->
+        <div class="pageTitle">
+            <h2>Post War</h2>
+        </div>
+        <!--Costs of the War section with h2 header and a paragraph-->
+        <div>
+            <h2>Costs of the War</h2>
+            <p>World War II was the deadliest war in human history. It resulted in the deaths of 50 million military personnel and civilians across the world. Approximately 300,000 Americans died out of the 15 million in uniform during the war. 800,000 Americans were left wounded. The United States faced over $258 billion in debt. Other nations suffered even more. The Soviet Union experienced the most casualties, ranging from 22-27 million. Nations like France were completely destroyed during German occupation.</p>
+            <p>Returning service members faced fears about finding homes and jobs, even though the economy was improving. Per-capita income for Americans increased during the war years. The GI Bill helped transition GIs (men and women who served) back into civilian life, allowing them to continue their education at government expense. Suburban communities were built to provide affordable homes. Levittown, on Long Island, New York, offered 17,000 mass-produced, low-cost homes. Many middle-class Americans became suburbanites.</p>
+        </div>
+        <!--Section on the United Nations with flexbox container-->
+        <div class="container">
+            <!--Title and Paragraph-->
+            <div class="item-1">
+                <h2>United Nations</h2>
+                <p>The founding of the U.N. aimed to maintain peace and protect equal rights for all people. The Senate approved the charter, ratified by 29 nations. The five major Allied powers (U.S., G.B., France, China, and the Soviet Union) had a permanent seat at the table. The U.S. proposed the Baruch Plan to regulate nuclear energy and eliminate atomic weapons, but the Soviets rejected it, showing they were not committed to peace. They also declined to participate in the International Bank for Reconstruction and Development.</p>
+                <p>Hostility emerged as the Soviets remained in occupied countries in Eastern Europe. Russia sought to expand its influence and control Eastern Europe, which the U.S. and Great Britain saw as a violation of self-determination.</p>
+            </div>
+            <!--Image (First Meeting of the U.N.)-->
+            <div class="item-2">
+                <img src="unfirstmeet.jpg" alt="U.N.">
+            </div>
+        </div>
+        <!--Video with more on the U.N.(item-1), next section on Soviet-U.S. tensions (item-2)-->
+        <div class="container">
+            <div class="item-1">
+                <iframe 
+                    src="https://www.youtube.com/embed/zAzqHbcX-Q4"
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>            
+            <div class="item-2">
+                <!-- Text and information for this section -->
+                <h2>Soviet-U.S. Tensions</h2>
+                <p>The temporary alliance between the U.S.S.R. and the United States ended. Poor relations reemerged between these two powers. Stalin complained about the U.S. and Britain for delaying the opening of the second front in France. The Soviet Union also suffered half the war deaths. At Potsdam, conflicts arose over post-war negotiations. During the war, FDR tried to cooperate with Stalin. When Truman became president, he questioned whether the U.S. could trust the Soviet Union. These tensions eventually led to the Cold War and the threat of nuclear war.</p> 
+                <p>With Yalta dividing Germany into four occupation zones, the Soviets attempted to make the eastern zone a communist state and pressured the democratic sectors to leave in order to tighten control over East Germany. The U.S. and Great Britain grew frustrated with “babying the Soviets” (Truman quote). Churchill delivered his “Iron Curtain” speech, calling for democracies to contain the expansion of communism.</p>  
+            </div>
+        </div>
+        <!--Pop culture section -->
+        <div class="container">
+            <!--Information -->
+            <div class="item-1">
+                <h2>Popular Culture / Economy</h2>
+                <p>While the Cold War lingered in the background, the 1950s were prosperous in the United States. Television became common among American families. Viewers watched situation comedies, westerns, quiz shows, and sports. Critics, including FCC chairman Newton Minnow, worried about the impact on children watching five or more hours a day. Americans also read more than ever. Novels in the 1950s explored individual struggles against conformity. Jack Kerouac wrote <i>On the Road</i> in 1957, describing the life of “Beatniks.” Allen Ginsberg wrote the poem “Howl,” reflecting youth rebellion against social norms. Teenagers embraced rock and roll, African American blues, and white country music. Elvis Presley emerged as a major music icon. Social reform and counterculture movements grew in the 1960s.</p>
+                <p>Corporate America dominated the economy. More workers held white-collar jobs than blue-collar jobs for the first time in history. Organizations promoted teamwork and conformity. The decades from 1945-1980 defined the golden age of corporate America.</p>
+            </div>
+            <!--Family Watching TV image-->
+            <div class="item-2">
+                <img src="familywatchingtv.jpg" alt="TV">
+            </div>
+        </div>
+        <!--Trivia Question-->
+        <h2>Trivia</h2>
+        <h3>Who became President after Truman?</h3>
+        <div class="trivia">
+            <button id="a">A: Dwight D. Eisenhower</button>
+            <button id="b">B: Franklin Delano Roosevelt</button>
+            <button id="c">C: Richard Nixon</button>
+            <button id="d">D: Adlai Stevenson</button>
+        </div>
+        <!-- Explains why the choice was right or wrong -->
+        <p id="explanation"></p>
+    </main>
+    <footer>
+        <!--Links back to the previous page (The War Itself) and to the next page (Sources)-->
+        <div class="footerContainer">
+            <!-- Previous Page -->
+            <div class="footeritem-1"><a href="/TheWar/index.html">Prev Page (The War Itself)</a></div>      
+            <div class="footeritem-2"><a href="/Sources/index.html">Next Page (Sources)</a></div>
+        </div>
+    </footer>
+    <!--Javascript link for the page-->
+    <script src="script.js"></script>
+    </body>
+</html>
